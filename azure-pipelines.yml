@@ -11,9 +11,9 @@ pool:
 
 steps:
 - script: echo Hello, world!
-          echo $pwd
   displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    pwd
