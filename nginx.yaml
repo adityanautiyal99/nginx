@@ -23,12 +23,12 @@
           dest: /etc/nginx/sites-available/
         become: yes
 
-      - name: create symlink
-        file:
-          src: /etc/nginx/sites-available/static_site.cfg
-          dest: /etc/nginx/sites-enabled/static_site.cfg
-          state: link
-        become: yes
+      #- name: create symlink
+       # file:
+        #  src: /etc/nginx/sites-available/static_site.cfg
+         # dest: /etc/nginx/sites-enabled/static_site.cfg
+         # state: link
+       # become: yes
 
       - name: copy the content of the web site
         copy:
